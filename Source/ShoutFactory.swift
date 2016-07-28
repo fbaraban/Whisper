@@ -2,8 +2,9 @@ import UIKit
 
 let shoutView = ShoutView()
 
-public func shout(announcement: Announcement, to: UIViewController, completion: (() -> ())? = {}) {
-  shoutView.craft(announcement, to: to, completion: completion)
+public func Shout(announcement: Announcement, backgroundViewColor: UIColor, to: UIViewController, completion: (() -> ())? = {}) {
+  shout.craft(announcement, to: to, completion: completion)
+  shout.backgroundView.backgroundColor = backgroundViewColor
 }
 
 public class ShoutView: UIView {
